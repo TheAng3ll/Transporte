@@ -5,8 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('Plantilla');
-});
+    return view('inicio/index');
+})->name("inicio");
 
 //vistas
 Route::view("registro","registro/index")->name("registro");
